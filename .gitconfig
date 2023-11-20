@@ -1,0 +1,19 @@
+[user]
+	email = akalankae@gmail.com
+	name = akalankae
+[init]
+	defaultBranch = main
+[core]
+	pager = cat
+	editor = nvim
+        symlinks = true
+[pager]
+	diff = less -F
+[branch]
+	autosetuprebase = always
+[color]
+	ui = true
+	status = auto
+	branch = auto
+[merge]
+	tool = nvim -d

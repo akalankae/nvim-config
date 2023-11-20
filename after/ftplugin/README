@@ -1,0 +1,4 @@
+Put filetype specifict settings in this directory.
+Name of file indicates the filetype.
+
+e.g. Python => python.lua
