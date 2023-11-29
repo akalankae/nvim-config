@@ -48,6 +48,17 @@ require("lazy").setup({
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
 
+    -- Formatter (formatter function of null-ls!)
+    -- autocmd setup in after/plugins/autocmd.lua
+    {
+      "stevearc/conform.nvim",
+      opts = {
+        formatters_by_ft = {
+          python = { "isort", "black" },
+        },
+      }
+    },
+
 
     --=========================================================================
     -- AUTO-COMPLETION
