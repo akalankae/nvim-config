@@ -26,7 +26,7 @@ M.plugins = {
   jedi_completion = { fuzzy = true },
 
   -- import sorting
-  pyls_isort = { enabled = true },
+  pyls_isort = { enabled = false },
 
   -- type checker
   pylsp_mypy = {
@@ -37,7 +37,7 @@ M.plugins = {
   },
 
   -- formatter options
-  black = { enabled = true, line_length = 80 },
+  black = { enabled = false, line_length = 80, skip_string_normalization = false },
   autopep8 = { enabled = false },
   yapf = { enabled = false },
 
