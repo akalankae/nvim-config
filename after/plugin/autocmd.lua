@@ -42,3 +42,12 @@ CreateAutocmd("ColorScheme", {
   end,
   group = CreateAugroup("RecordThemeChange", { clear = true }),
 })
+
+CreateAutocmd("BufWritePre", {
+  desc = "Format buffer with Conform.nvim",
+  pattern = "*.py",
+  callback = function(args)
+    require("conform").format({ bufnr = args.buf })
+  end,
+  group = require("plugins.lsp.autocmd").format_on_save,
+})
