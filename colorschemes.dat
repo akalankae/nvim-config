@@ -1,0 +1,24 @@
+PaperColor                      light dark
+github_dark_colorblind          dark
+github_dark_default             dark
+github_dark_dimmed              dark
+github_dark_high_contrast       dark
+github_dark_tritanopia          dark
+github_dark                     dark
+github_dimmed                   dark
+github_light_colorblind         light
+github_light_default            light
+github_light_high_contrast      light
+github_light_tritanopia         light
+github_light                    light
+catppuccin-macchiato            dark
+catppuccin-frappe               dark
+catppuccin-latte                light
+catppuccin-mocha                light
+catppuccin                      light dark
+kanagawa-dragon                 dark
+kanagawa-lotus                  light
+kanagawa-wave                   dark
+kanagawa                        light dark
+moonfly                         dark
+oxocarbon                       light dark
