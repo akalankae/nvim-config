@@ -5,7 +5,7 @@ local M = {}
 
 M.format_on_save = vim.api.nvim_create_augroup("FormatOnSave", { clear = true })
 
-function M.set_format_on_save(server, bufnr)
+function M.create_format_on_save_autocmd(server, bufnr)
   vim.api.nvim_create_autocmd("BufWritePre", {
     buffer = bufnr,
     desc = server.name .. " formatting buffer " .. bufnr,

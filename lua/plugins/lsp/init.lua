@@ -5,13 +5,13 @@
 -- (1) mason (2) mason-lspconfig (3) setup servers via lspconfig
 
 local set_keymap = require "plugins.lsp.keymap"
-local set_format_on_save = require("plugins.lsp.autocmd").set_format_on_save
+local create_format_on_save_autocmd = require("plugins.lsp.autocmd").create_format_on_save_autocmd
 
 local function on_attach(server, bufnr)
   set_keymap(server, bufnr)
 
   if server.server_capabilities.documentFormattingProvider then
-    set_format_on_save(server, bufnr)
+    create_format_on_save_autocmd(server, bufnr)
     vim.notify(server.name .. " will format buffer " .. bufnr)
   else
     vim.notify(server.name .. " cannot format buffer " .. bufnr)
