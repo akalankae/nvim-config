@@ -44,7 +44,9 @@ local server_configs = {
 
   pylsp = require "plugins.lsp.pylsp",
 
-  clangd = {},
+  clangd = {
+    offsetEncoding = { "utf-16" },
+  },
 
   standardrb = {},
   ruby_ls = {},
