@@ -45,7 +45,7 @@ CreateAutocmd("ColorScheme", {
 
 CreateAutocmd("BufWritePre", {
   desc = "Format buffer with Conform.nvim",
-  pattern = "*.py",
+  pattern = "*.py", -- check `formatters_by_ft` in conform.nvim @lua/plugins/init.lua
   callback = function(args)
     require("conform").format({ bufnr = args.buf })
   end,
