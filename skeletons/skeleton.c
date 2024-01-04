@@ -10,7 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-    // Code goes here
+    // code goes here
+    printf("Hello world\n");
 
     return (EXIT_SUCCESS);
 }
