@@ -68,17 +68,34 @@ local skeleton_dir = vim.fn.stdpath("config") .. "/skeletons/"
 
 CreateAutocmd("BufNewFile", {
   pattern = "*.sh",
-  command = "0read " .. skeleton_dir .. "skeleton.sh",
+  callback = function()
+    vim.cmd("0read " .. skeleton_dir .. "skeleton.sh")
+    require("core.util").UpdateSkeletonFile()
+  end
 })
 
 CreateAutocmd("BufNewFile", {
   pattern = "*.py",
-  command = "0read " .. skeleton_dir .. "skeleton.py",
+  callback = function()
+    vim.cmd("0read " .. skeleton_dir .. "skeleton.py")
+    require("core.util").UpdateSkeletonFile()
+  end
 })
 
 CreateAutocmd("BufNewFile", {
   pattern = "*.c",
-  command = "0read " .. skeleton_dir .. "skeleton.c",
+  callback = function()
+    vim.cmd("0read " .. skeleton_dir .. "skeleton.c")
+    require("core.util").UpdateSkeletonFile()
+  end
+})
+
+CreateAutocmd("BufNewFile", {
+  pattern = "*.lua",
+  callback = function()
+    vim.cmd("0read " .. skeleton_dir .. "skeleton.lua")
+    require("core.util").UpdateSkeletonFile()
+  end
 })
 
 CreateAutocmd("BufNewFile", {
@@ -91,11 +108,11 @@ CreateAutocmd("BufNewFile", {
   command = "0read " .. skeleton_dir .. "skeleton.go",
 })
 
-
 CreateAutocmd("BufNewFile", {
   pattern = "*.rb",
   command = "0read " .. skeleton_dir .. "skeleton.rb",
 })
+
 -- AUTO-PAIRS "FLY-MODE"
 -- Auto-pairs "Fly Mode" enables jumping out of nested closed pairs easier.
 -- Works for ), ] &  }. Instead of inserting parentheses.
@@ -142,7 +159,7 @@ CreateAutocmd("BufReadPost", {
 
 -- Update last modified timestamp of source files
 CreateAutocmd("BufWritePre", {
-  pattern = { "*.py", "*.c" },
+  pattern = { "*.py", "*.c", "*.lua", "*.sh" },
   callback = function()
     require("core.util").UpdateLastModifiedTime()
   end
