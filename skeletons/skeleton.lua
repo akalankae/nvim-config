@@ -1,7 +1,7 @@
 #!/usr/bin/env lua
 
--- File name:
+-- File name: <filepath>
 -- Author: Akalanka Edirisinghe <akalankae@gmail.com>
--- Created on: <date time>
+-- Created on: <date>
 -- Last Modified: <date> <time>
 -- Description:

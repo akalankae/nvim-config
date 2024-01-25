@@ -1,7 +1,7 @@
 /****************************************************************************************
- * File name:
+ * File name: <filepath>
  * Author: Akalanka Edirisinghe <akalankae@gmail.com>
- * Created on: <date time>
+ * Created on: <date>
  * Last modified: <date time>
  * Description:
  ***************************************************************************************/

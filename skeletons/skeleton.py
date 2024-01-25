@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# File name:
+# File name: <filepath>
 # Author: Akalanka Edirisinghe <akalankae@gmail.com>
-# Created on: <date time>
+# Created on: <date>
 # Last Modified: <date time>
 # Description:
 
