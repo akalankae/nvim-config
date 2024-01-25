@@ -61,7 +61,7 @@ CreateAutocmd("FileType", {
 })
 
 --=============================================================================
--- Skeleton Files
+-- Source Skeleton Files (templates) for Coding
 --=============================================================================
 
 local skeleton_dir = vim.fn.stdpath("config") .. "/skeletons/"
@@ -138,4 +138,12 @@ CreateAutocmd("BufReadPost", {
       vim.cmd([[ execute  "normal! g'\"" ]])
     end
   end,
+})
+
+-- Update last modified timestamp of source files
+CreateAutocmd("BufWritePre", {
+  pattern = { "*.py", "*.c" },
+  callback = function()
+    require("core.util").UpdateLastModifiedTime()
+  end
 })
