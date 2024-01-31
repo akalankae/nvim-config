@@ -1,5 +1,12 @@
+-- Options for github-theme
 -- Default options
-require("github-theme").setup({
+local found_theme, github_theme = pcall(require, "github-theme")
+if not found_theme then
+  vim.notify("github-theme was not found")
+  return 1
+end
+
+github_theme.setup({
   options = {
     -- Compiled file's destination location
     compile_path = vim.fn.stdpath("cache") .. "/github-theme",
