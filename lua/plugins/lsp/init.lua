@@ -48,8 +48,6 @@ local server_configs = {
     offsetEncoding = { "utf-16" },
   },
 
-  standardrb = {},
-  ruby_ls = {},
 }
 
 local handlers = {
