@@ -48,6 +48,7 @@ local server_configs = {
     offsetEncoding = { "utf-16" },
   },
 
+  cmake = {},
 }
 
 local handlers = {
