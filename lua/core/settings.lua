@@ -4,7 +4,7 @@ local settings = {
   shiftwidth = 4,   -- number of spaces used for indentation
 
   number = true,
-  textwidth = 79,      -- max line length
+  textwidth = 0,       -- DISABLE max line length
   wrap = false,        -- long text dissappears off right edge
 
   signcolumn = "auto", -- hide signcolumn where possible
