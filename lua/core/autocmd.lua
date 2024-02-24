@@ -66,6 +66,7 @@ CreateAutocmd("FileType", {
 
 local skeleton_dir = vim.fn.stdpath("config") .. "/skeletons/"
 
+-- shellscript
 CreateAutocmd("BufNewFile", {
   pattern = "*.sh",
   callback = function()
@@ -74,6 +75,7 @@ CreateAutocmd("BufNewFile", {
   end
 })
 
+-- python
 CreateAutocmd("BufNewFile", {
   pattern = "*.py",
   callback = function()
@@ -82,6 +84,7 @@ CreateAutocmd("BufNewFile", {
   end
 })
 
+-- C
 CreateAutocmd("BufNewFile", {
   pattern = "*.c",
   callback = function()
@@ -90,6 +93,7 @@ CreateAutocmd("BufNewFile", {
   end
 })
 
+-- lua
 CreateAutocmd("BufNewFile", {
   pattern = "*.lua",
   callback = function()
@@ -98,16 +102,19 @@ CreateAutocmd("BufNewFile", {
   end
 })
 
+-- HTML
 CreateAutocmd("BufNewFile", {
   pattern = "*.html",
   command = "0read " .. skeleton_dir .. "skeleton.html",
 })
 
+-- go
 CreateAutocmd("BufNewFile", {
   pattern = "*.go",
   command = "0read " .. skeleton_dir .. "skeleton.go",
 })
 
+-- ruby
 CreateAutocmd("BufNewFile", {
   pattern = "*.rb",
   command = "0read " .. skeleton_dir .. "skeleton.rb",
