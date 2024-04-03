@@ -36,12 +36,14 @@ require("lazy").setup({
     { "bluz71/vim-moonfly-colors" },
 
     -- A soothing pastel theme (light: latte | dark: mocha, macchiato, frappe)
-    { "catppuccin/nvim",                  name = "catppuccin" },
+    { "catppuccin/nvim",                 name = "catppuccin" },
 
     -- low-contrast dark theme
     { "dasupradyumna/midnight.nvim" },
 
+    --=========================================================================
     -- Manage LSP related plugins
+    --=========================================================================
 
     -- LSP support
     { "neovim/nvim-lspconfig" },
