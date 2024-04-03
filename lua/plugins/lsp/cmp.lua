@@ -109,6 +109,9 @@ cmp.setup({
     -- Instead of expreimental.native_menu = true, following is added
     view = { entries = "new" },
     experimental = { ghost_text = true },
+
+    -- for clangd_extensions
+    sorting = { comparators = { require("clangd_extensions.cmp_scores") } },
   }
 })
 
