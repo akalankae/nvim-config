@@ -40,8 +40,6 @@ local server_configs = {
     }
   },
 
-  bashls = {},
-
   pylsp = require "plugins.lsp.pylsp",
 
   clangd = {
