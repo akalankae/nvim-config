@@ -48,6 +48,9 @@ require("lazy").setup({
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
 
+    -- clangd's off-spec features for neovim LSP client
+    { "p00f/clangd_extensions.nvim" },
+
     -- Formatter (formatter function of null-ls!)
     -- autocmd setup in after/plugins/autocmd.lua
     {
