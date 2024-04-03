@@ -133,6 +133,12 @@ CreateAutocmd("BufNewFile", {
   command = "0read " .. skeleton_dir .. "skeleton.rb",
 })
 
+-- CMake (CMakeLists.txt)
+CreateAutocmd("BufNewFile", {
+  pattern = "CMakeLists.txt",
+  command = "0read " .. skeleton_dir .. "skeleton.cmake",
+})
+
 -- AUTO-PAIRS "FLY-MODE"
 -- Auto-pairs "Fly Mode" enables jumping out of nested closed pairs easier.
 -- Works for ), ] &  }. Instead of inserting parentheses.

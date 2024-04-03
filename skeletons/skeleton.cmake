@@ -1,6 +1,12 @@
 # Template for CMakeLists.txt
-cmake_minimum_required(VERSION 3.16..3.28)
-project(PROJECT_NAME C) # ? PROJECT_NAME
+cmake_minimum_required(VERSION 3.28)
+
+# PROJECT_NAME: cmake property that gets assigned to
+project(PROJECT_NAME
+    VERSION 0.1
+    LANGUAGE C) # ? PROJECT_NAME
+
+# executable name and source files required to compile it
 add_executable(${PROJECT_NAME} main.c)
 
 find_package(PkgConfig REQUIRED)
