@@ -6,6 +6,7 @@
 local opts = { clear = true }
 local CreateAutocmd = vim.api.nvim_create_autocmd
 local CreateAugroup = vim.api.nvim_create_augroup
+local CreateUserCmd = vim.api.nvim_create_user_command
 
 --=============================================================================
 -- Line Numbers
@@ -189,4 +190,15 @@ CreateAutocmd("BufWritePre", {
   callback = function()
     require("core.util").UpdateLastModifiedTime()
   end
+})
+
+--=============================================================================
+-- Register user commands to switch background color between Dark and Light
+--=============================================================================
+CreateAutocmd("VimEnter", {
+  pattern = "*",
+  callback = function()
+    CreateUserCmd("Dark", "set bg=dark", { bang = true })
+    CreateUserCmd("Light", "set bg=light", { bang = true })
+  end,
 })
