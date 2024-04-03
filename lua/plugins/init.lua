@@ -38,8 +38,8 @@ require("lazy").setup({
     -- A soothing pastel theme (light: latte | dark: mocha, macchiato, frappe)
     { "catppuccin/nvim",                  name = "catppuccin" },
 
-    -- Github's neovim themes
-    { "projekt0n/github-nvim-theme" },
+    -- low-contrast dark theme
+    { "dasupradyumna/midnight.nvim" },
 
     -- Manage LSP related plugins
 
