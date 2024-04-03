@@ -66,6 +66,19 @@ CreateAutocmd("FileType", {
 
 local skeleton_dir = vim.fn.stdpath("config") .. "/skeletons/"
 
+-- FIX ME!
+-- local extensions = {
+--   python = "py", c = "c", lua = "lua", ruby = "rb", html = "html", sh = "sh"
+-- }
+
+-- CreateAutocmd("BufNewFile", {
+--   pattern = { "*.sh", "*.py", "*.c", "*.lua", "*.go", "*.rb", "*.html" },
+--   -- command = "0read " .. skeleton_dir .. "skeleton." .. extensions[vim.api.nvim_buf_get_option(0, "filetype")],
+--   callback = function()
+--     vim.notify("Current filetype: " .. vim.fn.expand("<amatch>"))
+--   end,
+-- })
+
 -- shellscript
 CreateAutocmd("BufNewFile", {
   pattern = "*.sh",

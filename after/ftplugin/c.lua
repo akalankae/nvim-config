@@ -1,2 +1,2 @@
-vim.o.shiftwidth = 4
-vim.o.textwidth = 90
+vim.o.shiftwidth = 2
+vim.o.textwidth = 80
