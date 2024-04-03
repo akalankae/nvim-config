@@ -144,11 +144,13 @@ require("lazy").setup({
       init = function()
         vim.g.vimwiki_list = {
           {
+            template_path = vim.fn.stdpath("data") .. "/lazy/vimwiki/autoload/vimwiki",
             path = "/home/akalanka/Documents/notes",
             syntax = "markdown",
             ext = ".md",
           }
         }
+        vim.g.vimwiki_global_ext = 0
       end,
       event = "VeryLazy",
     },
