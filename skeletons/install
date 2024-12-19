@@ -1,0 +1,7 @@
+#!/bin/sh
+# build script for C/C++ projects using CMake
+
+mkdir -p build
+cd build
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -S .. -B .
+cmake --build . --clean-first
