@@ -43,11 +43,11 @@ CreateAutocmd("ColorScheme", {
   group = CreateAugroup("RecordThemeChange", { clear = true }),
 })
 
-CreateAutocmd("BufWritePre", {
-  desc = "Format buffer with Conform.nvim",
-  pattern = "*.py", -- check `formatters_by_ft` in conform.nvim @lua/plugins/init.lua
-  callback = function(args)
-    require("conform").format({ bufnr = args.buf })
-  end,
-  group = require("plugins.lsp.autocmd").format_on_save,
-})
+-- CreateAutocmd("BufWritePre", {
+--   desc = "Format buffer with Conform.nvim",
+--   pattern = "*.py", -- check `formatters_by_ft` in conform.nvim @lua/plugins/init.lua
+--   callback = function(args)
+--     require("conform").format({ bufnr = args.buf })
+--   end,
+--   group = require("plugins.lsp.autocmd").format_on_save,
+-- })
